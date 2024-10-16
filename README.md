@@ -57,8 +57,7 @@
 | protocolVersion |  | Значення за замовченням – 4.0 |
 
 Приклад заповнення наведено нижче:
-```
-   <soapenv:Header>
+```   <soapenv:Header>
       <xro:client iden:objectType="SUBSYSTEM">
          <iden:xRoadInstance>SEVDEIR-TEST</iden:xRoadInstance>
          <iden:memberClass>GOV</iden:memberClass>
@@ -77,7 +76,7 @@
          <iden:serviceVersion>1</iden:serviceVersion>
       </xro:service>
       <xro:userId>123</xro:userId>
-      <xro:id>12346222</xro:id>
+      <xro:id>2346222</xro:id>
       <xro:protocolVersion>4.0</xro:protocolVersion>
    </soapenv:Header>
 ```
