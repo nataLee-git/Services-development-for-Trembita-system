@@ -56,5 +56,29 @@
 | id |  | Унікальний ідентифікатор повідомлення-запиту у формі UUID |
 | protocolVersion |  | Значення за замовченням – 4.0 |
 
-
+Приклад заповнення наведено нижче:
+```
+   <soapenv:Header>
+      <xro:client iden:objectType="SUBSYSTEM">
+         <iden:xRoadInstance>SEVDEIR-TEST</iden:xRoadInstance>
+         <iden:memberClass>GOV</iden:memberClass>
+         <iden:memberCode>11110014</iden:memberCode>
+         <!--Optional:-->
+         <iden:subsystemCode>SUB_prod</iden:subsystemCode>
+      </xro:client>
+      <xro:service iden:objectType="SERVICE">
+         <iden:xRoadInstance>SEVDEIR-TEST</iden:xRoadInstance>
+         <iden:memberClass>GOV</iden:memberClass>
+         <iden:memberCode>11110015</iden:memberCode>
+         <!--Optional:-->
+         <iden:subsystemCode>88_Test_prod</iden:subsystemCode>
+         <iden:serviceCode>COUNTRY</iden:serviceCode>
+         <!--Optional:-->
+         <iden:serviceVersion>1</iden:serviceVersion>
+      </xro:service>
+      <xro:userId>123</xro:userId>
+      <xro:id>12346222</xro:id>
+      <xro:protocolVersion>4.0</xro:protocolVersion>
+   </soapenv:Header>
+```
 
