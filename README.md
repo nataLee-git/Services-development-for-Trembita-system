@@ -80,4 +80,5 @@
       <xro:protocolVersion>4.0</xro:protocolVersion>
    </soapenv:Header>
 ```
+## Приклади SOAP-сервісів, сумісних з системою «Трембіта»
 
