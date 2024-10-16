@@ -1,2 +1,4 @@
-# SOAP-services-development-for-Trembita-system
-This document contains general requirements to SOAP services development compatible with Trembita system
+# Розробка SOAP сервісів, сумісних з системою "Трембіта"
+## Перелік термінів та умовних скорочень
+
+Даний документ містить відомості стосовно розробки SOAP сервісів, сумісних з системою "Трембіта"
