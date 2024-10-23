@@ -2,4 +2,4 @@
 
 Настанови щодо роботи з вебсервісами та вебклієнтами, що працюють на базі протоколу SOAP наведено [тут](SOAP-services-development-for-Trembita-system.md).
 
-Настанови щодо роботи з вебсервісами та вебклієнтами, що працюють на базі протоколу REST наведено [тут]([REST-services-development-for-Trembita-system.md](https://github.com/nataLee-git/Services-development-for-Trembita-system/blob/ee742b51f352708ae075f3637203346445e85b1e/REST%20services%20development%20for%20Trembita%20system.md)).
+Настанови щодо роботи з вебсервісами та вебклієнтами, що працюють на базі протоколу REST наведено [тут](https://github.com/nataLee-git/Services-development-for-Trembita-system/blob/ee742b51f352708ae075f3637203346445e85b1e/REST%20services%20development%20for%20Trembita%20system.md).
