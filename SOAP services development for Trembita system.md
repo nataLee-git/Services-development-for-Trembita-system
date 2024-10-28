@@ -70,6 +70,23 @@
 
 ![image](https://github.com/user-attachments/assets/38887184-e23e-44a5-a71d-d3e815e069ff)
 
+## Завантаження WSDL-файлу із описом сервісу (методу вебсервісу опублікованого на ШБО)
+
+Для того, щоб завантажити WSDL-файл відповідного методу вебсервісу з ШБО, до якого буде звертатись вебклієнт необхідно в пошуковому рядку браузера ввести:
+```
+http://<IP_address_of_SS>/wsdl?xRoadInstance=<instance>&memberClass=<member-class>&memberCode=<member-code>&subsystemCode=<subsystem-code>&serviceCode=<service-code>&serviceVersion=<service-version>
+```
+де:
+- ```<IP_address_of_SS>``` – внутрішня ІР-адреса ШБО до якого буде звертатись вебклієнт;
+- ```<instance>``` – середовище системи «Трембіта» (SEVDEIR-TEST – для тестового та SEVDEIR – для промислового середовища);
+- ```<member-class>``` – значення за замовченням GOV;
+- ```<member-code>``` – код ЄДРПОУ Суб’єкта електронної взаємодії, що є власником сервісу;
+- ```<subsystem-code>``` – код підсистеми, на якій опубліковано метод вебсервісу в системі «Трембіта»;
+- ```<service-code>``` – код методу вебсервісу, опублікованого в системі «Трембіта» (код сервісу);
+- ```<service-version>``` – версія сервісу, не обов’язковий для заповнення атрибут.
+
+Наприклад:
+```http://192.168.99.235/wsdl?xRoadInstance=SEVDEIR-TEST&memberClass=GOV&memberCode=00000010&subsystemCode=UXP_ATR_Demo&serviceCode=SayHello```
 
 ## Особливості виклику SOAP-сервісів з використанням системи «Трембіта»
 В системі «Трембіта» електронні повідомлення-запити надсилаються наступним чином:
