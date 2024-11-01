@@ -5,4 +5,12 @@
 Настанови щодо розробки та роботи з вебсервісами і вебклієнтами, що працюють на базі протоколу REST наведено [тут](https://github.com/nataLee-git/Services-development-for-Trembita-system/blob/main/REST%20services%20development%20for%20Trembita%20system.md).
 
 
+
+
+
+
+
+
+
+
 Матеріали створено за підтримки проєкту міжнародної технічної допомоги «Підтримка ЄС цифрової трансформації України (DT4UA)».
