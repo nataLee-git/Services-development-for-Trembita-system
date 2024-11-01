@@ -56,6 +56,7 @@
 | custom_prefix | Ідентифікатор простору імен структур даних, які містять інформацію-запит та/або інформацію-відповідь, створюється постачальником вебсервісу. За потреби включення додаткових XML-схем для опису структури даних запиту та відповіді вони мають бути включені до файлу WSDL-опису вебсервісу, а також бути доступними за URL, що є одночасно простором імен |
 
 
+
 За бажанням можна додати для розроблюваних вебсервісів [заголовки](#заголовки-запитів-для-soap-сервісів-необхідні-задля-забезпечення-сумісності-з-системою-трембіта), які передаються між ШБО для реалізації додаткового логування.
 
 Також рекомендовано при розробці  SOAP-сервісів використовувати [EU interoperability core vocabulary](https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook.pdf).
@@ -93,8 +94,8 @@
 ## Завантаження WSDL-файлу із описом сервісу (методу вебсервісу опублікованого на ШБО)
 
 Для того, щоб завантажити WSDL-файл відповідного методу вебсервісу з ШБО, до якого буде звертатись вебклієнт необхідно в пошуковому рядку браузера ввести:
-```
-http://<IP_address_of_SS>/wsdl?xRoadInstance=<instance>&memberClass=<member-class>&memberCode=<member-code>&subsystemCode=<subsystem-code>&serviceCode=<service-code>&serviceVersion=<service-version>
+```url
+   http://<IP_address_of_SS>/wsdl?xRoadInstance=<instance>&memberClass=<member-class>&memberCode=<member-code>&subsystemCode=<subsystem-code>&serviceCode=<service-code>&serviceVersion=<service-version>
 ```
 де:
 - ```<IP_address_of_SS>``` – внутрішня ІР-адреса ШБО до якого буде звертатись вебклієнт;
@@ -107,8 +108,8 @@ http://<IP_address_of_SS>/wsdl?xRoadInstance=<instance>&memberClass=<member-clas
 
 Наприклад:
 
-```
-http://192.168.99.235/wsdl?xRoadInstance=SEVDEIR-TEST&memberClass=GOV&memberCode=00000010&subsystemCode=UXP_ATR_Demo&serviceCode=SayHello
+```url
+   http://192.168.99.235/wsdl?xRoadInstance=SEVDEIR-TEST&memberClass=GOV&memberCode=00000010&subsystemCode=UXP_ATR_Demo&serviceCode=SayHello
 ```
 
 ## Особливості виклику SOAP-сервісів з використанням системи «Трембіта»
@@ -132,7 +133,9 @@ http://192.168.99.235/wsdl?xRoadInstance=SEVDEIR-TEST&memberClass=GOV&memberCode
 ![image](https://github.com/user-attachments/assets/135fdc14-63f5-4a47-a48f-913478fbc532)
  
 
-## Заголовки запитів для SOAP-сервісів, необхідні задля забезпечення сумісності з системою С
+
+## Заголовки запитів для SOAP-сервісів, необхідні задля забезпечення сумісності з системою "Трембіта"
+
 | Елементи заголовку (1 рівень вкладеності)  | Елементи заголовку (2 рівень вкладеності) | Значення атрибутів |
 | :-------------: | :-------------: | :-------------: |
 | client |  |  |
@@ -154,7 +157,8 @@ http://192.168.99.235/wsdl?xRoadInstance=SEVDEIR-TEST&memberClass=GOV&memberCode
 | protocolVersion |  | Значення за замовченням – 4.0 |
 
 Приклад заповнення наведено нижче:
-```   <soapenv:Header>
+```xml
+    <soapenv:Header>
       <xro:client iden:objectType="SUBSYSTEM">
          <iden:xRoadInstance>SEVDEIR-TEST</iden:xRoadInstance>
          <iden:memberClass>GOV</iden:memberClass>
@@ -178,6 +182,7 @@ http://192.168.99.235/wsdl?xRoadInstance=SEVDEIR-TEST&memberClass=GOV&memberCode
    </soapenv:Header>
 ```
 ## Приклади SOAP-сервісів та клієнтів, сумісних з системою «Трембіта»
+
 | Категорія  | Мова програмування | Посилання на репозиторій |
 | :-------------: | :-------------: | :-------------: |
 | Синхронний SOAP сервіс | Python | [Див. тут](https://github.com/kshypachov/soap_sync_service) |
